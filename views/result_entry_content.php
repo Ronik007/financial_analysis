@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h1 class="text-center mt-5">Results Analysis</h1>
+    <h1 class="text-center mt-5">Results Entry Form</h1>
     <div class="container mt-5 px-md-5 py-md-5 px-4 py-4 result_form_container">
         <form id="result_entry_form" method="post" class="d-flex align-items-center justify-content-center flex-wrap">
             <div class="mb-3 col-12 col-md-3 pe-md-3">
