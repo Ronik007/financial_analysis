@@ -97,19 +97,23 @@ button {
     display: none;
 }
 
-#result_entry_form label,
 #result_entry_form input,
 #result_entry_form select {
+    color: var(--primary_color);
+}
+
+#result_entry_form label {
     color: var(--secondary_color);
 }
 
 #result_entry_form input::placeholder,
 #result_entry_form select::placeholder {
-    color: #000;
+    color: var(--primary_color);
     opacity: 0.7;
 }
 
-#result_entry_form input:focus {
+#result_entry_form input:focus,
+#result_entry_form select:focus {
     border-color: var(--secondary_color);
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(240, 165, 0, 0.25);
@@ -122,6 +126,34 @@ button {
 
 .required_field {
     color: #FE2712;
+}
+
+#result_submit_btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+}
+
+#btn_loader {
+    display: none;
+    width: 24px;
+    height: 24px;
+    background: url(../images/btn_loader.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#form_notification {
+    margin-top: 2rem;
+    display: none;
+    justify-content: center;    
+}
+
+#form_notification .alert {
+    margin-bottom: 0 !important;
+    padding: 0.625rem 1.5rem !important;
 }
 
 /* Result Analysis CSS End */
